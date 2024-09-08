@@ -20,7 +20,7 @@ pipeline {
                         emailext(
                             subject: "Jenkins Pipeline - Unit and Integration Tests Status: ${status}",
                             body: """\
-Testing Pipeline after 1st Commit. The Unit and Integration Tests stage has finished with status: ${status}.
+Testing Pipeline after 2nd Commit. The Unit and Integration Tests stage has finished with status: ${status}.
 
 Build URL: ${env.BUILD_URL}
 """,
@@ -50,7 +50,7 @@ Build URL: ${env.BUILD_URL}
                         emailext(
                             subject: "Jenkins Pipeline - Security Scan Status: ${status}",
                             body: """\
-Testing Pipeline after 1st Commit. The Security Scan stage has finished with status: ${status}.
+Testing Pipeline after 2nd Commit. The Security Scan stage has finished with status: ${status}.
 
 Build URL: ${env.BUILD_URL}
 """,
@@ -80,7 +80,7 @@ Build URL: ${env.BUILD_URL}
                         emailext(
                             subject: "Jenkins Pipeline - Integration Tests on Staging Status: ${status}",
                             body: """\
-Testing Pipeline after 1st Commit. The Integration Tests on Staging stage has finished with status: ${status}.
+Testing Pipeline after 2nd Commit. The Integration Tests on Staging stage has finished with status: ${status}.
 
 Build URL: ${env.BUILD_URL}
 """,
